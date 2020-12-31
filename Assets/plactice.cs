@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class plactice : MonoBehaviour
+public class Plactice : MonoBehaviour
 {
-    void SayHello()
+    void CallName(string name)
     {
-        Debug.Log("Hello");
+        Debug.Log("Hello" + name);
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        SayHello();
+        CallName("Tom");
     }
 
     // Update is called once per frame
