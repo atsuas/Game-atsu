@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Plactice : MonoBehaviour
 {
-    void CallName(string name)
+    int Add(int a, int b)
     {
-        Debug.Log("Hello" + name);
+        int c = a + b;
+        return c;
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        CallName("Tom");
+        int answer;
+        answer = Add(2, 3);
+        Debug.Log(answer);
     }
 
     // Update is called once per frame
